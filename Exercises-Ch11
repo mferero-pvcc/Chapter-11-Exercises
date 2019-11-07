@@ -1,0 +1,109 @@
+3. Given the declaration
+
+    std::vector<int> list(100);
+
+    (a) What expression represents the very first element of list?
+    (b) What expression represents the very last element of list?
+    (c) Write the code fragment that prints out the contents of list.
+    (d) Is the expression list[3.0] legal or illegal?
+
+4. Given the declarations
+
+    std::vector<int> list{2, 3, 1, 14, 4};
+    int x = 2;
+
+   evaluate each of the following expressions:
+
+    (a) list[1]
+    (b) list[x]
+    (c) list.size()
+    (d) list.empty()
+    (e) list.at(3)
+    (f) list[x] + 1
+    (g) list[x + 1]
+    (h) list[list[x]]
+    (i) list[list.size() - 1]
+    
+6. Provide a single declaration statement that declares an integer vector named list that contains the values 45, -3, 16 and 8
+
+10. Complete the following function that adds up all the positive values in an integer vector. For example, if vector vec contains the elements 3, -3, 5, 2, -1, and 2, the call sum_positive(vec) would evaluate to 12, since 3 + 5 + 2 + 2 = 12. The function returns zero if the vector is empty. The function does not affect the contents of the vector.
+ 
+    int sum_positive(const std::vector<int>& v) {
+        // Add your code...
+    }
+
+11. Complete the following function that counts the even numbers in an integer vector. For example, if vector vec contains the elements 3, 5, 4, -1, and 0, the call count_evens(vec) would evaluate to 2, since the vector contains two even numbers: 4 and 0. The function returns zero if the vector is empty. The function does not affect the contents of the vector.
+
+    int count_evens(const std::vector<int>& v) {
+        // Add your code...
+    }
+    
+12. Complete the following function that counts the even numbers in a 2D vector of integers. 
+
+    int count_evens(const std::vector<std::vector<int>>& v) {
+        // Add your code...
+    }
+    
+13. Complete the following function that compares two integer vectors to see if they contain exactly the same elements in exactly the same positions. The function returns true if the vectors are equal; otherwise, it returns false. For example, if vector vec1 contains the elements 3, 5, 2, -1, and 2, and vector vec2 contains the elements 3, 5, 2, -1, and 2, the call equals(vec1, vec2) would evaluate to true. If instead vector vec2 contains the elements 3, 2, 5, -1, and 2, the call equals(vec1, vec2) would evaluate to false (the second and third elements are not in the same positions). Two vectors of unequal sizes cannot be equal. The function does not affect the contents of the vectors.
+
+    bool equals(const std::vector<int>& v1, const std::vector<int>& v2) {
+        // Add your code...
+    }
+    
+20. Provide the statement(s) that declare and create a static array named a that can hold 20 integers.
+
+21. Provide the statement(s) that declare and ceate a dynamic array named a that can hold 20 integers.
+
+25. Consider the following function that processes the elements of an array using a range:
+
+    bool proc(const int *begin, const int *end) {
+        // Details omitted . . .
+    }
+
+    and an array and vector declared as shown here:
+
+    int a[10];
+    std::vector<int> v;
+
+    (a) Provide the statement that correctly calls proc with array a.
+    (b) Provide the statement that correctly calls proc with vector v.
+    
+32. Complete the following function that adds up all the positive values in an array of integers. For example, if array arr contains the elements 3, -3, 5, 2, -1, and 2, the call sum_positive(arr) would evaluate to 12, since 3 + 5 + 2 + 2 = 12. The function returns zero if the array is empty (that is, n < 1).
+
+    // Array a with length n
+    int sum_positive(const int *a, int n) {
+        // Add your code...
+    }
+    
+42. Rewrite the following code fragment using array notation instead of pointer notation:
+
+    void display(int *a, int n) {
+        while (n) {
+            std::cout << *a << " ";
+            a++;
+            n--;
+        }
+        std::cout << '\n';
+    }
+
+43. Rewrite the following code fragment using pointer notation instead of array notation:
+    int sum(int *a, int n) {
+        int s = 0;
+        for (int i = 0; i < n; i++)
+            s += a[i];
+        return s;
+    }
+    
+ 45. Suppose your task is to implement the function with the prototype
+
+    void proc(char *s);
+    
+    where s is a C string. When you implement the body of proc, how can you determine the length of string s?  
+    
+47. What operator should eventually be used when the new operator is used to allocate memory? What is the consequence of its omission?
+.
+49. Complete the following function that counts the number of negative values in a 10 × 10 integer 2D array.
+
+    int count_negatives(int a[10][10]) {
+        // Add your code...
+    }
